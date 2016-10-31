@@ -1,0 +1,10 @@
+<?php $title = "%%TITLE%%";
+$desc = "%%META%%";
+$lang = 'en';
+include("gamhead.php") ?>
+
+%%REPLACE%%
+
+</div>
+<?php include("gamside.php"); ?>
+<?php include("gamfoot.php"); ?>
