@@ -2,95 +2,82 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 
-// Get the file contents
-//var body = fs.readFileSync('index.html', 'utf8');
+var jsdom = require('jsdom').jsdom;
 
-// Get webpage
-request({
-    uri: "http://www.gambling.net/mobile-guide.php",
-}, function(error, response, body) {
+function convertPages(pageType, callback){
 
-    var $ = cheerio.load(body, {
-        decodeEntities: false
-    });
+  var templateFile = fs.readFileSync('./templates/template-'+ pageType +'.txt', 'utf8');
+  var contentFiles = fs.readdirSync('./new-content/'+ pageType +'/');
 
-    var articleBlock = $('article.main-block');
-    var popularPages = articleBlock.find('.block-light-green');
+  for(x in contentFiles)
+  {
+    var page = fs.readFileSync('./new-content/'+ pageType +'/' + contentFiles[x], 'utf8');
+    // $ = cheerio.load(page, {
+    //     withDomLvl1: true,
+    //     normalizeWhitespace: false,
+    //     xmlMode: false,
+    //     decodeEntities: false
+    // });
 
-    fs.writeFile('newfile.html', popularPages, 'utf8');
-    //console.log($('article.main-article').html());
-});
+    var document = jsdom(page, {});
+    var window = document.defaultView;
+    var $ = require('jquery')(window);
 
-// // Load into the dom
-// $ = cheerio.load(body, {
-//     withDomLvl1: true,
-//     normalizeWhitespace: false,
-//     xmlMode: false,
-//     decodeEntities: false
-// });
-//
-// $('a').addClass('boobs');
-//
-// console.dir(fs.readdirSync('./new-content'));
-//
-// fs.writeFile('newfile.html', $.html(), 'utf8');
+    var pageTitle = $("p:contains('Title:')");
+    var pageMeta = $("p:contains('Meta:')");
+    $('body').find(pageMeta).remove();
+    $('body').find(pageTitle).remove();
 
-var templateFile = fs.readFileSync('./templates/page-template.txt', 'utf8');
-var contentFiles = fs.readdirSync('./new-content');
+    //console.log(pageTitle.text());
 
-for(x in contentFiles)
-{
-  var page = fs.readFileSync('./new-content/' + contentFiles[x], 'utf8');
-  $ = cheerio.load(page, {
-      withDomLvl1: true,
-      normalizeWhitespace: false,
-      xmlMode: false,
-      decodeEntities: false
-  });
+    $('h1').nextUntil( "h2" ).addBack().wrapAll( "<div class='best-block' />");
+    var cornerImage = '<img class="alignright" src="http://placehold.it/350x150" alt="Corner Image" />';
+    $('.best-block').prepend(cornerImage);
+    $('<code>Function</code>').insertAfter('.best-block');
 
-  var newPage = templateFile.replace(/%%REPLACE%%/g, $('body').html());
-  var pageTitle = $("p:contains('Title:')").text();
-  var pageMeta = $("p:contains('Meta:')").text();
-  newPage = newPage.replace(/%%TITLE%%/g, pageTitle.replace('Title:', ''));
-  newPage = newPage.replace(/%%META%%/g, pageMeta.replace('Meta:', ''));
+    //console.log($('h2 + h3').html());
 
-  fs.writeFile('./new-files/' + contentFiles[x].replace('.html', '.php'), newPage, 'utf8');
-  console.log('Complete: ' + contentFiles[x]);
+    newPage = templateFile.replace(/%%REPLACE%%/g, $('body').html());
+    newPage = newPage.replace(/%%TITLE%%/g, pageTitle.text()
+    .replace('Title: ', '')
+    .replace(' 2016 ', ' ".date(\'Y\')." ')
+    .concat('"')
+    .replace(' 2016"', ' ".date(\'Y\')')
+  );
+    newPage = newPage.replace(/%%META%%/g, pageMeta.text()
+    .replace('Meta: ', '')
+    .replace(' 2016 ', ' ".date(\'Y\')." ')
+    .concat('"')
+    .replace(' 2016"', ' ".date(\'Y\')')
+  );
+    newPage = newPage.replace('<code>Function</code>', '<?php $override = false; display_top_five(\'index\', $code, $override,\'toplists\',$mobile); ?>')
+
+    fs.writeFile('./new-files/'+ pageType +'/' + contentFiles[x].replace('.html', '.php'), newPage, 'utf8');
+    console.log('Complete: ' + contentFiles[x]);
+
+
+  }
 
 }
 
-// fs.readFile('./templates/page-template.txt', {'encoding': 'utf-8'}, (err, data) => {
-//   if (err) throw err;
-//
-//   var $ = cheerio.load(data, {
-//       decodeEntities: false
-//   });
-//
-//   var articleBlock = $('article.main-block');
-//   var popularPages = articleBlock.find('.block-light-green');
-//
-//
-//   var newData = data.replace(/%%REPLACE%%/g, "W3Schools");
-//   console.log(newData);
-//
-//   fs.writeFile('newfile.html', popularPages, 'utf8');
-//
-// });
-//
-// const testFolder = './new-content/';
-// fs.readdir(testFolder, (err, files) => {
-//   files.forEach(file => {
-//     console.log(file);
-//   });
-// })
+//convertPages('non-commercial', nonCommercial);
+convertPages('commercial', commercial);
 
-// Get the converted word doc html
+function moveMetaData(){
 
-//Extract the page from the html <body>
+}
 
-// Extract the title and meta
+function nonCommercial(){
+  //console.log('boobs');
+}
 
+function commercial(newPage){
 
-//dump the new data into templates
+  //Find untill first h2 heading
+  console.log(newPage);
+  newPage = newPage('.main-block').nextUntil( "h2" ).wrapAll( "<div class='best-block' />");
+  // Wrap the first paras in tag
+  console.log('Wrap Text');
 
-//save template as a new file in folder
+  return newPage;
+}
