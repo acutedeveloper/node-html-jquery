@@ -1,21 +1,21 @@
-<?php $title = "Gambling Software Guide ".date('Y')." - Meet the Top Game Makers"";
-$desc = "Find out about the World's Leading Gaming Developers in the world of Gambling in ".date('Y')." - These are responsible for some of you favorite games & titles."";
+<?php $title = "Gambling Software Guide ".date('Y')." - Meet the Top Game Makers";
+$desc = "Find out about the World's Leading Gaming Developers in the world of Gambling in ".date('Y')." - These are responsible for some of you favorite games & titles.";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
-  
 
 
-<h1>Gambling Software Guide</h1>
-<p>If you've spent any time visiting more than a few of the internet's leading casinos, then you've probably noticed how similar they are. Naturally, most gambling sites have the same roster of core games, but that's just the beginning. You'll probably notice similarities in the graphics, soundtracks, layout, gameplay, and interface itself. This isn't a case of plagiarism or imitation being the sincerest form of flattery. In reality, most casinos use software from a handful of the world's leading gaming developers.</p>
-<p>The vast majority of sites either license individual games or purchase complete gaming solutions that cover everything from the website, lobby, and cashier to the games themselves. Of course it's all customized with the site's theme and vision. While this might seem lazy, it actually provides players with the best possible gaming experience. The world's top developers not only invest millions creating award winning games, but they also create the code that makes fair gaming possible. Keep reading to learn more about the leading industry players and what makes for great software.</p>
+
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Gambling Software Guide</h1><p>If you've spent any time visiting more than a few of the internet's leading casinos, then you've probably noticed how similar they are. Naturally, most gambling sites have the same roster of core games, but that's just the beginning. You'll probably notice similarities in the graphics, soundtracks, layout, gameplay, and interface itself. This isn't a case of plagiarism or imitation being the sincerest form of flattery. In reality, most casinos use software from a handful of the world's leading gaming developers.</p><p>The vast majority of sites either license individual games or purchase complete gaming solutions that cover everything from the website, lobby, and cashier to the games themselves. Of course it's all customized with the site's theme and vision. While this might seem lazy, it actually provides players with the best possible gaming experience. The world's top developers not only invest millions creating award winning games, but they also create the code that makes fair gaming possible. Keep reading to learn more about the leading industry players and what makes for great software.</p></div>
+
+
 <h2>Making Sense of Software</h2>
 <p>When we speak of software, we don't necessarily mean downloadable games. A decade ago, casinos did require players to download and install the casino's software client on their PC, but times have changed. These days, software and apps are often optional. While some sites continue to offer games for download, instant play or non-download games that run directly in your web browser are gaining popularity. How you end up playing isn't just a matter of personal preference. It depends on what device you have and where you play. Your best bet is to visit a site that interests you for complete playing instructions.</p>
 <h2>The Mobile Revolution</h2>
 <p>Casino software developers have stepped up to the plate and knocked it out of the park with fantastic mobile games. Whether you have a smartphone or tablet, you'll have access to hundreds of titles. It makes no difference whether you have an iPad, iPhone, BlackBerry, Windows Phone, Microsoft Surface, or Android device. There are great apps or instant play games for every platform. We're sure you'll excuse the cliché when we call mobile casinos a game changer, at least after you realize that you can play almost anywhere with no planning required. All you need is an internet connection. Of course you're free to play on your Mac, PC, Linux computer, or Chromebook if you prefer.</p>
-<h2>Top Gaming Providers</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Top Gaming Providers</h2>
 <h3>Microgaming Software</h3>
 <p>Widely credited for creating the world's first internet casino in 1994, Microgaming continues to dominate the gaming landscape. The software company, which calls the Isle of Man home, has more than 600 games yet none is as big as its Mega Moolah progressive slot machine, which paid out the equivalent of $17 million in October 2015. The company also runs the popular MPN poker network. Most recently the company launched virtual reality gaming with an Oculus Rift compatible roulette game. To explore the company's history, technology, and selection of games visit microgaming.co.uk.</p>
 <h3>Playtech</h3>
@@ -42,5 +42,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

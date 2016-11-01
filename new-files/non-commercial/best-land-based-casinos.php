@@ -1,15 +1,15 @@
 <?php $title = "The 10 Best Casinos to Visit Around the World in ".date('Y')";
 $desc = "Land based casinos continue to thrive as full-fledged entertainment destinations, with popular hubs in Vegas, Macau & more. View our top 10 best list here."";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
   
 
 
-<h1>Best Land Based Casinos</h1>
-<p>Despite the growing popularity of internet gambling sites, land based casinos continue to thrive. Not only will you find more casinos on all six major continents than ever before, but the industry has seriously elevated its game. Many of today's best casinos are part of full-fledged entertainment destinations that offer much more than the usual lot of table games and slot machines. The hottest gambling establishments are also home to award winning dining, palatial accommodations, epic shows, vibrant nightlife, and even amazing attractions like theme parks, zoos, or circuses. Keep reading to learn more about our favorite spots in the USA and around the globe.</p>
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Best Land Based Casinos</h1><p>Despite the growing popularity of internet gambling sites, land based casinos continue to thrive. Not only will you find more casinos on all six major continents than ever before, but the industry has seriously elevated its game. Many of today's best casinos are part of full-fledged entertainment destinations that offer much more than the usual lot of table games and slot machines. The hottest gambling establishments are also home to award winning dining, palatial accommodations, epic shows, vibrant nightlife, and even amazing attractions like theme parks, zoos, or circuses. Keep reading to learn more about our favorite spots in the USA and around the globe.</p></div>
+
 <h2>Aria Resort and Casino</h2>
 <p>3730 Las Vegas Boulevard South, Las Vegas, Nevada, USA</p>
 <p>aria.com</p>
@@ -19,7 +19,7 @@ include("gamhead.php") ?>
 <p>3600 Las Vegas Boulevard South, Las Vegas, Nevada, USA</p>
 <p>bellagio.com</p>
 <p>Las Vegas's first mega-resort might look a little dated eighteen years after first opening its doors, but it still attracts everyone from Hollywood A-listers to tourists looking to take a selfie in front of the fountain. Inside you'll find all the usual table games and slots spread across the 116,000 square foot gaming floor, but the poker room, sportsbook, and racebook are the real gambling highlights. You won't want to miss the Bellagio Gallery of Fine Art and the fabulous O show. The Bellagio also boasts 3,950 hotel rooms, five-star dining, and The Bank Nightclub.</p>
-<h2>Wynn Las Vegas</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Wynn Las Vegas</h2>
 <p>3131 Las Vegas Boulevard South, Las Vegas, Nevada, USA</p>
 <p>wynnlasvegas.com</p>
 <p>If the Wynn moniker doesn't ring a bell, Steve Wynn is the man behind Treasure Island, The Mirage, and Bellagio. While those properties are magnificent, Wynn Las Vegas has raised the stakes significantly since opening in 2005. Visitors can expect even greater elegance and grandeur at this fabulous casino, which sits on 215 scenic acres. The Wynn Las Vegas boasts 111,000 square feet of glorious gaming space, 2,716 luxurious hotel rooms, the strip's sole golf course, nine distinguished restaurants, and the sophisticated Tryst nightclub. Don't forget to visit the Lake of Dreams, which deserves a spot in everyone's reality.</p>
@@ -58,5 +58,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

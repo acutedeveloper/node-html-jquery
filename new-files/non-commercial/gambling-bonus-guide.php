@@ -1,15 +1,15 @@
 <?php $title = "Gambling Bonus Guide - The Types, How to Claim + More"";
 $desc = "Learn about Online Gambling Bonuses in ".date('Y')." - Why casinos offer them, the different types available, plus how to make the most of them today. Read more."";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
   
 
 
-<h1>Gambling Bonus Guide</h1>
-<p>Online gambling isn't just immensely entertaining and incredibly convenient. Gambling on the internet also has the potential to be far more lucrative than playing at your local casino. That's because internet casinos not only offer better payouts than their offline counterparts, but they temp you through their virtual doors with generous bonuses, exciting promotions, and valuable rewards. Keep reading to discover all the ways you can cash in handily at gambling sites.</p>
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Gambling Bonus Guide</h1><p>Online gambling isn't just immensely entertaining and incredibly convenient. Gambling on the internet also has the potential to be far more lucrative than playing at your local casino. That's because internet casinos not only offer better payouts than their offline counterparts, but they temp you through their virtual doors with generous bonuses, exciting promotions, and valuable rewards. Keep reading to discover all the ways you can cash in handily at gambling sites.</p></div>
+
 <h2>Why Casinos Offer Bonuses</h2>
 <p>If you've ever looked for places to gamble online, chances are you've been overwhelmed by the possibilities. Between all the poker rooms, casinos, sportsbooks, horse racing sites, electronic bingo halls, and lottery games, there are hundreds of places to play. As difficult as it is for you to decide where to play, consider the perspective of gambling sites. How can they possibly stand out in such a crowded field? Even if they have better games, software, and customer service, will anyone ever know? A casino can place all the banner ads they want, but at the end of the day will players really bother to click on them without a real incentive? That's precisely where bonuses come into play.</p>
 <p>Rather than waste their money on Super Bowl ads, online gambling sites are prepared to spend their advertising budgets directly on you with bonuses. You read that correctly. Internet casinos, poker rooms, and sportbooks will literally pay you to sign up and play. What's even better is the size of the bonuses can top hundreds or even thousands of dollars as gambling sites try to outdo each other with exceedingly larger offers. All you have to do is find them and claim them.</p>
@@ -17,7 +17,7 @@ include("gamhead.php") ?>
 <p>Bonuses come in many sizes and at various stages of the game, but none is as common or valuable as the sign up bonus. As the name implies, sign up or welcome bonuses are designed to get new players to register and try out a site. They typically require you to make a deposit, although you may encounter less lucrative no deposit sign up bonuses, which we'll get to below.</p>
 <p>The most common variety of sign up bonus is what's known as a match bonus. These offers will match the amount of your deposit with additional cash. For example, you might see a sign up offer promising a 100% bonus up to $900. That means if you deposit $900, you'll get an extra $900 to play with for free. Of course, you aren't obligated to deposit the maximum. You can just as easily get $20 in free cash with a $20 deposit. It is important to be aware of the cap. If you were to deposit $1000, you would only get an extra $900, which would be an overall 90% bonus. When browsing bonuses, a larger percentage isn't necessarily best if you plan on making a big deposit. It's a good idea to consider any caps, so you can claim the maximum amount of cash.</p>
 <p>While it used to be true that welcome bonuses were only applicable on your first deposit, some sites now opt to spread the wealth. You might see a bonus offer advertising up to $800 in free cash, but on further inspection you'll see that it's split over 3 deposits. For example, you might earn a 150% bonus up to $400 on your first deposit, a 100% bonus up to $200 on your second deposit, and a 75% bonus up to $200 on your third deposit. Offers like these are great if you just want to dip your feet in the pool without making a huge cash commitment up front.</p>
-<h2>Understanding Betting Requirements</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Understanding Betting Requirements</h2>
 <p>If bonuses sound too good to be true, your skepticism is justified. While all the offers at reputable gambling sites are real, there is naturally some fine print. As you can probably guess, gambling sites won't let you withdraw your bonus cash immediately. Casinos generously dole out cash to get you through the door, but they want you to stay and play. If would simply be bad business to give players the power to take the money and run. Instead, you'll need to satisfy playthrough or betting requirements. That's the amount of money or number of bets you're required to place before you can withdrawal your bonus cash.</p>
 <p>The actual playthrough requirements vary across sites but also depend on what games you play. For example, you might need to wager 30 times the amount of your bonus when playing slots, but that number could balloon to 100 if you play roulette. While betting 30 times your $100 bonus to the tune of $3000 might seem daunting, keep in mind that you aren't going to lose every time. As your bankroll grows and you're able to make larger wagers, the conditions become increasingly easy to satisfy.</p>
 <h2>Tracking Your Progress</h2>
@@ -37,5 +37,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

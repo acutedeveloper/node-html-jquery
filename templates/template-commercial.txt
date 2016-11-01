@@ -1,7 +1,7 @@
 <?php $title = "%%TITLE%%;
 $desc = "%%META%%;
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
@@ -10,5 +10,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

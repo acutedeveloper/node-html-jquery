@@ -1,14 +1,14 @@
 <?php $title = "Gambling Across the Globe - Top Country Level Options in ".date('Y');
 $desc = "Top Gambling Options Across the Globe - With all the different rules & regulations it can be confusing. Our guides will help sift through the details.";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
   
 
 
-<div class="best-block"><img class="alignright" src="http://placehold.it/350x150" alt="Corner Image"><h1>Top Gambling Sites Across the Globe</h1><p>Gambling isn't a new phenomenon. People have enjoyed various types of betting for centuries. Many cultures have rich gaming traditions and there is historical evidence of gambling on all continents except Antarctica. While it's never been easier to gamble than it is in 2016, making sense of all the different rules, regulations, and opportunities across the globe can be confusing. Fortunately, we've created gambling guides for each country that will help you find the best places to play in your region.</p><p><em>Our gambling experts have found that X is the best real money casino for 2016.</em></p><p>Whether you prefer slot machines, poker, sports betting, table games, or other types of betting, our gaming experts have you covered. Here's what you can expect when you visit any of the casino online gambling sites recommended in our guide:</p><ul>
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Top Gambling Sites Across the Globe</h1><p>Gambling isn't a new phenomenon. People have enjoyed various types of betting for centuries. Many cultures have rich gaming traditions and there is historical evidence of gambling on all continents except Antarctica. While it's never been easier to gamble than it is in 2016, making sense of all the different rules, regulations, and opportunities across the globe can be confusing. Fortunately, we've created gambling guides for each country that will help you find the best places to play in your region.</p><p><em>Our gambling experts have found that X is the best real money casino for 2016.</em></p><p>Whether you prefer slot machines, poker, sports betting, table games, or other types of betting, our gaming experts have you covered. Here's what you can expect when you visit any of the casino online gambling sites recommended in our guide:</p><ul class="list">
 	<li>A variety of secure and convenient banking options</li>
 	<li>Hundreds of true to life casino games</li>
 	<li>Rewarding promotions and real money bonuses</li>
@@ -21,7 +21,7 @@ include("gamhead.php") ?>
 <p>Whether you live in Johannesburg, Durban, Port Elizabeth or elsewhere in South Africa, gambling isn't hard to come by. It doesn't matter if you love slot machines, roulette, baccarat, or poker, we'll help you stretch your Rands to the limit in our SA gambling guide.</p>
 <h2>New Zealand Gambling</h2>
 <p>Kiwis love all forms of betting. From the nation's half dozen casinos and prevalent pokies to horse racing and sport wagering, gambling is a large part of life in New Zealand. Gambling on the internet is also gaining popularity. Find out more about all the ways to play in our real money gambling guide.</p>
-<h2>Singapore Gambling</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Singapore Gambling</h2>
 <p>Singapore is home to two of Asia's most popular casino resorts, but gambling is still considered taboo in the republic. While many of the world's top gambling sites no longer do business in Singapore, there's still plenty of fun to be had. We'll run it all down in our Singapore gambling guide.</p>
 <h2>Malaysia Gambling</h2>
 <p>In Malaysia, gambling is immensely popular despite a complicated legal situation. Our gambling guide will help you make sense of the current situation and let you know how countless Malaysians continue to enjoy top gambling sites across the globe.</p>
@@ -46,5 +46,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

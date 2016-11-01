@@ -1,20 +1,20 @@
 <?php $title = "Celebrity Gamblers: The Stars That Love The Vegas Strip"";
 $desc = "If you've spent any time in Las Vegas, you've probably spotted a couple of Hollywood heavyweights, sports superstars & high-profile comedians on the strip."";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
   
 
 
-<h1>A Look at Celebrity Gamblers</h1>
-<p>If you've ever spent any time in Las Vegas, you've probably spotted at least a couple of Hollywood heavyweights, sports superstars, and internationally known comedians on the strip. With an insatiable taste for the good life and more disposal income than you probably make in a decade, many celebrities love gambling. Plus, who can resist the vibrant atmosphere that is the city's trademark, especially if you can afford it? Keep reading as we rundown the biggest celebrity gamblers along with their trials and tribulations at the tables.</p>
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>A Look at Celebrity Gamblers</h1><p>If you've ever spent any time in Las Vegas, you've probably spotted at least a couple of Hollywood heavyweights, sports superstars, and internationally known comedians on the strip. With an insatiable taste for the good life and more disposal income than you probably make in a decade, many celebrities love gambling. Plus, who can resist the vibrant atmosphere that is the city's trademark, especially if you can afford it? Keep reading as we rundown the biggest celebrity gamblers along with their trials and tribulations at the tables.</p></div>
+
 <h2>Charlie Sheen</h2>
 <p>While most people are familiar with Sheen's work in Two and a Half Men, Platoon, and Major League, many people don't realize he's also a compulsive gambler. Perhaps his big time bets were overshadowed by his heavy drug use and sexual escapades. The actor not only used to wager $20,000 weekly on sports, but he once placed a million-dollar wager and lost. We're not sure if that was during his trademark “winning” phase.</p>
 <h2>Shannon Elizabeth</h2>
 <p>Best known for playing Nadia, the sultry foreign exchange student in The American Pie films, Shannon Elizabeth has proved time and time again that gambling isn't just for the boys. Shannon is probably the country's best known female celebrity poker player after competing in the 2005 WSOP Main Event. She managed to cash four times in 2006 and 2007 events too. While she's still active nearly a decade later, most card players remember her from the NBC National Heads-Up Poker Championship where she reached the semifinals.</p>
-<h2>Michael Jordan</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Michael Jordan</h2>
 <p>Did you know Air Jordan's fame stretches beyond the hardwood and onto the casino floor? During the 1992 Olympics in Barcelona, Jordan routinely played poker until the break of dawn, sacrificing sleep even with gold medals on the line. The hall of famer also bet his teammates on who would get their luggage first at the airport. Yet Michael Jordan the gambler might be best known for losing $5-million playing craps in Las Vegas or racking up a $1.25-million debt placing golf bets.</p>
 <h2>Ben Affleck</h2>
 <p>The caped crusader is widely known for bringing his heroics to the blackjack and poker tables, much to the dismay of many casinos. Affleck was so successful at blackjack that the Hard Rock Casino banned him from playing after winning close to a million bucks during two visits. Despite his winning track record, his former wife Jennifer Garner was equally unimpressed, if you believe the divorce papers. Poker fans may recall that Ben won the California State Poker Championship in 2004 and appeared in a WPT final tourney the same year.</p>
@@ -47,5 +47,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

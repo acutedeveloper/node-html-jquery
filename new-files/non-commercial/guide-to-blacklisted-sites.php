@@ -1,21 +1,21 @@
-<?php $title = "Avoiding the Worst Casinos with Our ".date('Y')." Casino Blacklist"";
-$desc = "There are many trusted casinos around in ".date('Y')." - But also many that you should avoid. We list the worst offenders, so you can ensure you stay safe gambling."";
+<?php $title = "Avoiding the Worst Casinos with Our ".date('Y')." Casino Blacklist";
+$desc = "There are many trusted casinos around in ".date('Y')." - But also many that you should avoid. We list the worst offenders, so you can ensure you stay safe gambling.";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
-  
 
 
-<h1>Guide to Avoiding the Worst Casinos</h1>
-<p>It's hardly a secret that the online gambling industry has a checkered past. You don't have to search far to find everything from minor player grievances to outright horror stories at internet casinos. While many casinos deserve your trust, there are plenty of unscrupulous sites that have given the industry a bad name over the years. The sad fact is there are few barriers to launching any sort of business on the Internet and that includes casinos.</p>
-<p>When shopping online, you probably exercise caution so that you don't end up with counterfeit merchandise or have your personal information stolen. It's critical to be even more vigilant when choosing a gambling site. While we recommend reading reviews and ratings, it's just as important to consult a blacklist like this one. It's the quickest way to make sure you steer clear of the worst gambling sites.</p>
+
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Guide to Avoiding the Worst Casinos</h1><p>It's hardly a secret that the online gambling industry has a checkered past. You don't have to search far to find everything from minor player grievances to outright horror stories at internet casinos. While many casinos deserve your trust, there are plenty of unscrupulous sites that have given the industry a bad name over the years. The sad fact is there are few barriers to launching any sort of business on the Internet and that includes casinos.</p><p>When shopping online, you probably exercise caution so that you don't end up with counterfeit merchandise or have your personal information stolen. It's critical to be even more vigilant when choosing a gambling site. While we recommend reading reviews and ratings, it's just as important to consult a blacklist like this one. It's the quickest way to make sure you steer clear of the worst gambling sites.</p></div>
+
+
 <h2>Making the Blacklist</h2>
 <p>Online gambling sites appear on our blacklist for a variety of reasons. More importantly, the severity of infractions vary widely. Some might not seem like a big deal at first glance, but others will make anyone's jaw drop. Still, no matter how big or small the issues happen to be, we advise against throwing caution to the wind. There's no sense dealing with disappointment or compromising your security when excellent alternatives are only a click away.</p>
 <h2>Payment Issues</h2>
 <p>Money matters are probably the most common concern among online gamblers. There are too many stories of players facing needless payment delays, but that's hardly the worst part. Some casinos may never pay out your winnings, especially if you win big. Many players have faced a litany of excuses and lies. Unfortunately, payment delays can be complicated. Some of the worst casinos accuse players of cheating or failing to satisfy arbitrary terms and conditions to avoid paying out winnings. In some cases, the offending gambling website faces its own financial troubles and can't afford to keep their part of the bargain. Whether or not conditions improve, this is beyond unacceptable.</p>
-<h2>Unfair Games</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Unfair Games</h2>
 <p>With the exception of live dealer games, online casino titles are based on RNGs or random number generators. Without giving you a computer science lesson, these software algorithms ensure that every roll of the dice, spin of the wheel, and shuffle of the deck mirrors what would happen in real life with mathematical certainty. More importantly, RNGs are routinely certified and audited to ensure they operate as advertised. Unfortunately, sketchy sites lie about the randomness of their games and may not have them verified at all. Some sites are known for letting you win when you wager small amounts, but you'll lose as soon as you raise the stakes. Keep in mind that many players claim even fair games are fixed when faced with a losing streak. In reality, you need to be aware of the house edge as well as variance.</p>
 <h2>Problems with Gambling Licenses</h2>
 <p>As you probably know, Internet gambling sites are licensed and regulated by gambling commissions in the region where they operate. Unfortunately, some sites are licensed by questionable authorities that effectively do nothing. Over the years, we've even found a few sites operating with expired or revoked licenses. Some sites even have the gall to falsify their licenses.</p>
@@ -47,5 +47,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>

@@ -1,14 +1,14 @@
 <?php $title = "Online vs Live Gambling Play - Should You Play Offline in ".date('Y');
 $desc = "With the rise in Online Gambling Sites, should you play offline anymore? Are live casinos worth visiting? We discuss the advantages & disadvantages of both.";
 $lang = 'en';
-include("gamhead.php") ?>
+include($_SERVER['DOCUMENT_ROOT']."/gamhead.php") ?>
 
   <article class="main-block">
 
   
 
 
-<div class="best-block"><img class="alignright" src="http://placehold.it/350x150" alt="Corner Image"><h1>Online Versus Offline Gambling Guide</h1><p>Despite the growing popularity of online gambling sites, live casinos have no trouble attracting millions of visitors through their doors. In fact, brand new colossal casinos continue popping up all over the globe in the face of increased online competition. That's because both online and live casinos have their own benefits and drawbacks. Keep reading as we compare internet and offline gambling. We'll help you discover what works best for your entertainment dollar and lifestyle.</p></div><?php $override = false; display_top_five('index', $code, $override,'toplists',$mobile); ?>
+<div class="best-block"><img class="alignright" src="http://placehold.it/142" alt="Corner Image"><h1>Online Versus Offline Gambling Guide</h1><p>Despite the growing popularity of online gambling sites, live casinos have no trouble attracting millions of visitors through their doors. In fact, brand new colossal casinos continue popping up all over the globe in the face of increased online competition. That's because both online and live casinos have their own benefits and drawbacks. Keep reading as we compare internet and offline gambling. We'll help you discover what works best for your entertainment dollar and lifestyle.</p></div><?php $override = false; display_top_five('index', $code, $override,'toplists',$mobile); ?>
 
 <h2>Embracing Convenience</h2>
 <p>It's hard to discount just how much technology has changed our lives over the past two decades. Whether you are shopping, working, or keeping up with friends, the internet has made life infinitely more convenient. Yet nothing compares to the whole new world of entertainment that the web has singlehandedly ushered in. Online casinos give you the power to play instantly, from anywhere in the world, at any hour of the day.</p>
@@ -16,7 +16,7 @@ include("gamhead.php") ?>
 <h2>Comparing Game Variety</h2>
 <p>The world's best online casinos have several thousand slot machines and table games. Yet the average live casino pales in comparison. Many local casinos are brimming with slots but offer a limited selection of table games. That might not seem like a big deal if you don't mind being restricted to the most popular titles like blackjack or roulette, but if you feel like playing obscure poker variations then prepare to head home disappointed.</p>
 <p>The average online casino offers hundreds of unique titles. In addition, you'll never have to wait in line for your spot at a crowded table since internet gambling sites can instantly create new tables to meet demand. It's not like they need to hire a construction crew to expand the casino floor. It just takes a little extra data on a server. More importantly, you will find a far wider range of stakes on the internet, especially at the lower end. While live casinos reserve games like baccarat for high rollers, you can easily play hands for a dollar on the web.</p>
-<h2>Playing in Complete Comfort</h2>
+<?php include($_SERVER['DOCUMENT_ROOT']."/popular.php"); ?><h2>Playing in Complete Comfort</h2>
 <p>One of the great things about playing online is that you don't have to leave your house, but you don't need to get dressed either. You can easily enjoy poker in your pajamas or blackjack naked if you prefer and no one will be the wiser. What you wear and how comfortable you want to be is entirely up to you. Yet when you visit a live casino, you'll not only have to wear clothes, but some places even have dress codes. While a jacket and tie or cocktail dress is rarely required, you may be denied entry wearing flip flops or a tank top. Of course, some people do enjoy dressing to the nines. At the same time there is nothing stopping you from wearing a tuxedo while you play from the comfort of your kitchen.</p>
 <p>Comfort goes beyond your attire. We've already mentioned the internet gambling sites never make you fight for a spot at a table. But did you know that online casinos are perfect for beginners? There's no table manners to learn or etiquette to master. You'll never have to worry about looking like a fool or being shamed in public by other patrons. Online play brings you unprecedented privacy, but you can also play at your own pace. Whether you prefer playing at a snail's pace or at the speed of light, internet casinos are ready to meet your needs.</p>
 <h2>Getting the Most Bang for your Buck</h2>
@@ -37,5 +37,5 @@ include("gamhead.php") ?>
   </article>
 
 </div>
-<?php include("gamside.php"); ?>
-<?php include("gamfoot.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamside.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/gamfoot.php"); ?>
